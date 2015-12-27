@@ -102,6 +102,7 @@ ngx_http_time_map_block(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
     ctx->pool = cf->pool;
 
     ctx->default_value = NULL;
+    ctx->time_node = NULL;
     var->get_handler = ngx_http_time_map_variable;
     var->data = (uintptr_t) ctx;
 
@@ -114,6 +115,9 @@ ngx_http_time_map_block(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
     rv = ngx_conf_parse(cf, NULL);
     *cf = save;
 
+    if (ctx->default_value == NULL) {
+        rv = NGX_CONF_ERROR;
+    }
     return rv;
 
 }
@@ -211,7 +215,6 @@ ngx_http_time_map(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
     if (nelts == 2) {
 	if (ngx_strcmp(args[0].data, "default") == 0) {
             if (ctx->default_value != NULL) {
-                ngx_conf_log_error(NGX_LOG_EMERG, cf, 0, "is duplicate");
                 return NGX_CONF_ERROR;
             }
 
@@ -227,7 +230,7 @@ ngx_http_time_map(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
             ctx->default_value->no_cacheable =0;
             ctx->default_value->valid =1;
 
-            return NGX_CONF_OK;
+	    return NGX_CONF_OK;
         }
     }
     if (nelts == 3) {
@@ -309,6 +312,7 @@ ngx_http_time_map(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
 	time_node->e_time[3]=b[3];
 	time_node->e_time[4]=b[4];
 	time_node->e_time[5]=b[5];
+
 	return NGX_CONF_OK;
     }
     return NGX_CONF_OK;
