@@ -52,37 +52,37 @@ notice: It's a new module maybe have some bugs but you can try it.
 
 * default
 
-> Syntax:	default default_value
-> Default:	—  
-> Context:	time_map  
+> Syntax:	default default_value;  
+> Default:	—    
+> Context:	time_map    
 
 * gt
 
-> Syntax:	gt Time value
-> Default:	—  
-> Context:	time_map  
+> Syntax:	gt Time value;  
+> Default:	—    
+> Context:	time_map    
 
 If the request localtime is greater than the Time you set  then set Value to $variable.
 
 * lt
 
-> Syntax:	lt Time Value
-> Default:	—  
-> Context:	time_map  
+> Syntax:	lt Time Value;  
+> Default:	—    
+> Context:	time_map    
 
 If the request localtime is less than the Time you set then set Value to $variable.
 
 * at
 
-> Syntax:	at begin_time end_time value
-> Default:	—  
-> Context:	time_map  
+> Syntax:	at begin_time end_time value;  
+> Default:	—    
+> Context:	time_map    
 
 * noat
 
-> Syntax:	noat begin_time end_time value
-> Default:	—  
-> Context:	time_map  
+> Syntax:	noat begin_time end_time value;  
+> Default:	—    
+> Context:	time_map    
 
 
 # TODO
