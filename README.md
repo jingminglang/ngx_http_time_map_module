@@ -88,5 +88,6 @@ If the request localtime is less than the Time you set then set Value to $variab
 # TODO
 
 * use the cached time;
+* include directive;
 
 
