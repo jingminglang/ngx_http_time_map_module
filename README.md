@@ -12,12 +12,12 @@ notice: It's a new module maybe have some bugs but you can try it.
 > ...  
 >     time_map $t1 {  
 >      default 1;   
->      gt  2015.*.*.15 10;  
+>      gt  2015.\*.\*.15 10;  
 >     }  
 >
 >     time_map $t2 {  
 >      default 1;   
->      lt  2015.*.*.15 10;  
+>      lt  2015.\*.\*.15 10;  
 >     }  
 >  
 >     time_map $t3 {  
@@ -27,6 +27,7 @@ notice: It's a new module maybe have some bugs but you can try it.
 >  
 >     time_map $t3 {  
 >      default 1;   
+>      gt  2015.1.12.15.30 10;  
 >      at  2015.12.30.14  2015.12.30.15 1;  
 >      noat  2015.12.29  2015.12.31 2;  
 >     }  
