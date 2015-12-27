@@ -4,7 +4,7 @@ It is very easy to use this module set a variable dependent on localtime.
 time_map only can use in the http block;
 
 # Exmpale:
-http {
+>http {
 ...
     time_map $t1 {
      default 1; 
@@ -32,14 +32,14 @@ http {
   }
 }
 
-default
+* default
 
-gt
+* gt
 
-lt
+* lt
 
-at
+* at
 
-noat
+* noat
 
 # TODO
