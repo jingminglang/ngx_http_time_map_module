@@ -17,17 +17,20 @@ If you find some bugs. please report it to me ,I will fix it.
   ...  
       time_map $t1 {  
        default 1;   
+       # After 15 o'clock every day in 2015. set 10 to $t1 
        gt  2015.*.*.15 10;  
        # the * means any.  
       }  
    
       time_map $t2 {  
        default 1;   
+       # Befor 15 o'clock every day in 2015. set 10 to $t2 
        lt  2015.*.*.15 10;  
       }  
    
       time_map $t3 {  
        default 1;   
+       # Between 2015.12.30.14  2015.12.30.15. set 10 to $t3 
        at  2015.12.30.14  2015.12.30.15 10;  
       }  
    
