@@ -14,7 +14,7 @@ notice: It's a new module maybe have some bugs but you can try it.
 >      default 1;   
 >      gt  2015.\*.\*.15 10;  
 >     }  
->
+>  
 >     time_map $t2 {  
 >      default 1;   
 >      lt  2015.\*.\*.15 10;  
