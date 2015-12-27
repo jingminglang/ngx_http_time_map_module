@@ -8,6 +8,8 @@ Use it like nginx map module and geo module.
 
 notice: It's a new module maybe have some bugs but you can try it.
 
+If you find some bugs. please report it to me ,I will fix it.
+
 # Exmpale:
 
 > http {  
@@ -15,6 +17,7 @@ notice: It's a new module maybe have some bugs but you can try it.
 >     time_map $t1 {  
 >      default 1;   
 >      gt  2015.\*.\*.15 10;  
+>      #\* means any.  
 >     }  
 >  
 >     time_map $t2 {  
