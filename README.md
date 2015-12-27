@@ -10,6 +10,12 @@ notice: It's a new module maybe have some bugs but you can try it.
 
 If you find some bugs. please report it to me ,I will fix it.
 
+# Install:
+
+> sudo ./configure  --add-module=ngx_http_time_map_module  
+> sudo make  
+> sudo make install  
+
 # Exmpale:
 ```
 
