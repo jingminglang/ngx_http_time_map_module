@@ -62,7 +62,7 @@ notice: It's a new module maybe have some bugs but you can try it.
 > Default:	—  
 > Context:	time_map  
 
-If the request localtime is greater than Time you set  then set Value to $variable.
+If the request localtime is greater than the Time you set  then set Value to $variable.
 
 * lt
 
@@ -70,7 +70,7 @@ If the request localtime is greater than Time you set  then set Value to $variab
 > Default:	—  
 > Context:	time_map  
 
-If the request localtime is less than Time you set then set Value to $variable.
+If the request localtime is less than the Time you set then set Value to $variable.
 
 * at
 
