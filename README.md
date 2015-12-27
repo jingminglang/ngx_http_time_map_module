@@ -17,8 +17,8 @@ If you find some bugs. please report it to me ,I will fix it.
   ...  
       time_map $t1 {  
        default 1;   
-       gt  2015.\*.\*.15 10;  
-       #\* means any.  
+       gt  2015.*.*.15 10;  
+       # the * means any.  
       }  
    
       time_map $t2 {  
