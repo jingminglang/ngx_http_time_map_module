@@ -1,7 +1,8 @@
 # ngx_http_time_map_module
 
 It is very easy to use this module set a variable dependent on localtime.
-time_map only can use in the http block;
+
+*time_map* only can use in the http block;
 
 # Exmpale:
 
