@@ -58,15 +58,19 @@ notice: It's a new module maybe have some bugs but you can try it.
 
 * gt
 
-> Syntax:	gt time value;
+> Syntax:	gt Time value;
 > Default:	—  
 > Context:	time_map  
+
+If the request localtime is greater than Time you set  then set Value to $variable.
 
 * lt
 
-> Syntax:	lt time value;
+> Syntax:	lt Time Value;
 > Default:	—  
 > Context:	time_map  
+
+If the request localtime is less than Time you set then set Value to $variable.
 
 * at
 
@@ -83,6 +87,6 @@ notice: It's a new module maybe have some bugs but you can try it.
 
 # TODO
 
-* use cache time;
+* use the cached time;
 
 
