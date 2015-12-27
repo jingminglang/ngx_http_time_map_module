@@ -2,6 +2,8 @@
 
 It is very easy to use this module set a variable dependent on localtime.
 
+Use it like nginx map module and geo module.
+
 *time_map* only can use in the http block;
 
 notice: It's a new module maybe have some bugs but you can try it.
