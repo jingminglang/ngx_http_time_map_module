@@ -247,6 +247,10 @@ ngx_http_time_map(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
 	int b[6]={0},i=0;
 	str = strtok((char*)args[1].data,"."); 
 	while(str!=NULL) { 
+	    if(i>=6) {
+		ngx_conf_log_error(NGX_LOG_EMERG, cf, 0, "invalid time style");
+		return NGX_CONF_ERROR;
+	    } 
 	    if(ngx_strcmp(str, "*")==0){
 	      b[i]=-1;
 	    } else {
@@ -279,6 +283,10 @@ ngx_http_time_map(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
 	int b[6]={0},i=0;
 	str = strtok((char*)args[1].data,"."); 
 	while(str!=NULL) { 
+	    if(i>=6) {
+		ngx_conf_log_error(NGX_LOG_EMERG, cf, 0, "invalid time style");
+		return NGX_CONF_ERROR;
+	    } 
 	    if(ngx_strcmp(str, "*")==0){
 	      b[i]=-1;
 	    } else {
@@ -297,6 +305,10 @@ ngx_http_time_map(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
 	i=0;
 	str = strtok((char*)args[2].data,"."); 
 	while(str!=NULL) { 
+	    if(i>=6) {
+		ngx_conf_log_error(NGX_LOG_EMERG, cf, 0, "invalid time style");
+		return NGX_CONF_ERROR;
+	    } 
 	    if(ngx_strcmp(str, "*")==0){
 	      b[i]=-1;
 	    } else {
